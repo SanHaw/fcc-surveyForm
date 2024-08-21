@@ -2,24 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Registration Form</title>
+    <title>Which Seventeen Member are You??</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Registration Form</h1>
-    <p id=description> Register now</p>
+    <h1 id="title">Which Seventeen Member are You??</h1>
+    <p id=description>Channel you inner Carat and see which member suits your personality the best</p>
     <form id="survey-form">
       <label for="name" id="name-label">
         Name:
-        <input id="name" type="text" placeholder="John Smith"/>
+        <input id="name" type="text" placeholder="John Smith" required/>
        </label>
-      <label for: "email">
+      <label for: "email" id="email-label">
         E-mail:
-        <input id="email" type="email"id="email-label" placeholder="jsmith@email.com"/>
+        <input id="email" type="email"id="email-label" placeholder="jsmith@email.com" required/>
       </label>
-      <label>
+      <label for="number" id="number-label">
         Number:
-        <input id="number" type="number" id="number-label" placeholder="0000000000"/>
+        <input id="number" type="number" id="number-label" placeholder="0000000000" min="0" max="9999999999"/>
       </label>
+
+      <label> How do you spend your free time?
+      
+      </label>
+
+      <label> How do you spend your free time?
+      <select id="dropdown">
+        
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="c">d</option>
+          
+      </select>
+      </label>
+
+       <label>
+          <input type="radio" name="color" value="a"> A. Writing or composing music
+        </label>
+        <label>
+          <input type="radio" name="color" value="green"> Green
+        </label>
+        <label>
+          <input type="radio" name="color" value="blue"> C. Hanging out with friends or family
+        </label>
+
+        <label>
+          <input type="checkbox" name="color" value="blue"> Blue
+        </label>
+        <label>
+          <input type="checkbox" name="color" value="blue"> Blue
+        </label>
+        <input type="submit" value="Submit" id="submit"/>
+
+        
+  <textarea>
     </form>
+
   </body>
